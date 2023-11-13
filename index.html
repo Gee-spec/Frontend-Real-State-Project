@@ -1,0 +1,191 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<script>
+		var arr_images =  ["images/1.jpg","images/2.jpg","images/4.jpg","images/3.jpg"];
+		var i = 0;
+		function slide()
+		{
+			document.getElementById("ban").src = arr_images[i];
+			if(i<arr_images.length-1)
+			{
+				i++;
+			}
+			else
+			{
+				i=0;
+			}
+			setTimeout('slide()',1000);
+		}
+		function Img(arg)
+		{
+			var arr_img = ["images/pic.jpg","images/pic2.jpg","images/pic1.jpg"];
+			document.getElementById("img1").src = arr_img[arg];
+		}
+		function Images1(arg)
+		{
+			var arr_img1 = ["images/pic2.jpg","images/pic.jpg","images/pic3.jpg"];
+			document.getElementById("img2").src = arr_img1[arg];
+		}
+		function Images(arg)
+		{
+			var arr_img2 = ["images/pic3.jpg","images/pic1.jpg","images/pic.jpg"];
+			document.getElementById("img3").src = arr_img2[arg];
+		}
+		</script>
+</head>
+
+<body onload="slide()">
+	<div class="header">
+		<div class="logo">
+			<center><img src="images/logo.png"></center>
+		</div>
+		<div class="contact">
+			<center><h2>RESERVATION</h2></center>
+			<center><p>Browse Online or Call Us Toll Free-1(800)444-6789</p></center>
+			<input type="text">
+		</div>
+	</div>
+	
+	<div class="menu">
+		<ul>
+			<li><a href="#">HOME</a><li>
+			<li><a href="about.html">ABOUT</a><li>
+			<li><a href="Services.html">SREVICES</a><li>
+			<li><a href="contact.html">CONTACT</a><li>
+		</ul>
+	</div>
+	
+	<div class="banner">
+		<img src="images/2.jpg" id="ban">
+	</div>
+	
+	<div class="boxes">
+	
+		<div class="box">
+			<h2>COMMERCIAL</h2>
+			<center><img src="images/home.png"></center>
+			<h4>10% OFF ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+		</div>
+		<div class="box">
+			<h2>RESIDENTIAL</h2>
+			<center><img src="images/phone.png"></center>
+			<h4>10% OFF ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+		</div>
+		<div class="box">
+			<h2>LUXURY</h2>
+			<center><img src="images/man.png"></center>
+			<h4>10% OFF ANY RESERVATION WEEKENDS OR WEEKDAYS</h4>
+		</div>
+	</div>
+	
+	<div class="boxes1">
+		<div class="offer">
+				<h1>What we Offer</h1>
+				<hr>
+			<div class="off">
+				<h6>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</h6>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+				</p>
+			</div>
+			<div class="off">
+				<h6>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</h6>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+				</p>
+			</div>
+			<div class="off">
+				<h6>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER</h6>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+				</p>
+			</div>
+			
+		</div>
+		<div class="update">
+			<h1>OUR UPDATES</h1>
+			<hr>
+			<p>
+				Lorem ipsum dolor sitconsectetueradipis
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+			</p>
+			<p>
+				Lorem ipsum dolor sitconsectetueradipis
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+			</p>
+			<p>
+				Lorem ipsum dolor sitconsectetueradipis
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+			</p>
+		</div>
+	</div>
+	
+	<div class="real">
+		<div class="Guide">
+				<h1>REAL ESTATE GUIDE</h1>
+				<hr>
+			<div class="pics">
+				<center><img src="images/pic.jpg" id="img1"></center>
+					<center><input type="button" value="1" onclick="Img(0)">
+					<input type="button" value="2" onclick="Img(1)">
+					<input type="button" value="3" onclick="Img(2)"></center>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor incididunt labore et dolore magna.
+				</p>
+			</div>
+			<div class="pics">
+				<center><img src="images/pic2.jpg" id="img2"></center>
+				<center><input type="button" value="1" onclick="Images1(0)">
+						<input type="button" value="2" onclick="Images1(1)">
+						<input type="button" value="3" onclick="Images1(2)"></center>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor incididunt labore et dolore magna.
+				</p>
+			</div>
+			<div class="pics">
+				<center><img src="images/pic3.jpg" id="img3"></center>
+				<center><input type="button" value="1" onclick="Images(0)">
+						<input type="button" value="2" onclick="Images(1)">
+						<input type="button" value="3" onclick="Images(2)"></center>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, eiusmod tempor incididunt labore et dolore magna.
+				</p>
+			</div>
+		</div>
+		<div class="login">
+			<div class="user">
+				<h1>USER LOGIN</h1>
+				<hr>
+				<table cellpadding="10px">
+					<tr>
+						<tb>User Name</tb>
+					</tr>
+					<tr> 
+						<tb><input type="text" ></tb>
+					</tr>
+					<tr>
+						<tb>Password</tb>
+					</tr>
+					<tr>
+						<tb><input type = "password"></tb>
+					</tr>
+					<tr>
+						<tb><input type="button" value="Login" class="but" style=""></tb>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<h2>Desgined By Ishaan</h2>
+	</div>
+</body>
+</html>
